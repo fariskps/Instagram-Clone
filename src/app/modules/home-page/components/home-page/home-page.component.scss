@@ -1,0 +1,15 @@
+.page-content {
+  padding: 56px 0% 56px 0%;
+
+  .scroll-viewport {
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:625px) {
+  .page-content {
+    width: 50%;
+    margin: auto;
+  }
+}

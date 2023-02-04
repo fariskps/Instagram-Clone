@@ -1,0 +1,134 @@
+$color_1: #000;
+$color_2: rgba(0, 0, 0, 0.5);
+
+.post {
+	width: 100%;
+	height: auto;
+	background: #fff;
+	margin-top: 0px;
+}
+
+.info {
+
+	width: 100%;
+	height: 46px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.username {
+		width: auto;
+		font-weight: bold;
+		color: #000;
+		font-size: 13px;
+		margin: 0;
+		margin-left: 2px;
+	}
+
+	.options {
+		cursor: pointer;
+		margin-right: 10px;
+	}
+
+	.user {
+		display: flex;
+		align-items: center;
+		padding-left: 9px;
+	}
+
+	.profile-pic {
+		height: 35px;
+		width: 35px;
+		padding: 0;
+		background: none;
+		border-radius: 100%;
+		overflow: hidden;
+
+		img {
+			border: none;
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+}
+
+
+
+.post-content {
+	width: 100%;
+	padding: 22px 12px;
+}
+
+.likes {
+	font-weight: bold;
+	margin-top: 7px;
+	margin-bottom: 0px;
+}
+
+.description {
+	margin: 6px 0;
+	font-size: 14px;
+	line-height: 18px;
+	width: 95%;
+
+	span {
+		font-weight: bold;
+		margin-right: 10px;
+	}
+
+	.shoMore {
+		font-weight: initial;
+		margin-left: 7px;
+		color: $color_2;
+	}
+}
+
+.post-small-item {
+	color: $color_2;
+	font-size: 12px;
+	margin: 0px;
+}
+
+.comment-wrapper {
+	width: 96%;
+	height: 36px;
+	border-radius: 1px solid #dfdfdf;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.comment-box {
+	width: 80%;
+	height: 100%;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	padding: 0;
+
+}
+
+.comment-btn {
+	width: 70px;
+	height: 100%;
+	background: none;
+	border: none;
+	outline: none;
+	text-transform: capitalize;
+	font-size: 16px;
+	color: $color_2;
+	opacity: 0.5;
+}
+
+.action-btn {
+	width: 70px;
+	height: 100%;
+	background: none;
+	border: none;
+	outline: none;
+	text-transform: capitalize;
+	font-size: 16px;
+	color: $color_2;
+	opacity: 0.5;
+}
+

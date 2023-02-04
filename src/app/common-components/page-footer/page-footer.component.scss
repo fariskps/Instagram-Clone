@@ -1,0 +1,24 @@
+mat-button-toggle-group{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    border: 0;
+    box-shadow: -3px -5px 4px 0px rgb(0 0 0 / 8%);
+    border-top: 1px solid #eee;
+    height: 54px;
+    flex-wrap: wrap;
+    mat-button-toggle{
+        border: none !important;
+        flex: auto;
+        mat-icon{
+            font-size: 30px;
+    
+        }
+        .user-thumb-small{
+          margin-top: 11px;
+        }
+    }
+   
+}

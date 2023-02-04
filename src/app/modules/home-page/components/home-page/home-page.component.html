@@ -1,0 +1,26 @@
+<!-- home page header -->
+<insta-home-page-header></insta-home-page-header>
+<!-- home page header -->
+
+
+<!-- home page content will load here -------------- -->
+<div class="page-content">
+  <!-- scroll content -->
+  <cdk-virtual-scroll-viewport *ngIf="showFeeds"  itemSize="400"  class="scroll-viewport">
+   <div *cdkVirtualFor="let item of dataFeeds| slice:0:29; let i=index">
+    <insta-feed-box [feedItem]="item"></insta-feed-box></div> 
+  </cdk-virtual-scroll-viewport>
+  <!-- scroll content -->
+
+  <!-- error msg -->
+  <div *ngIf="!showFeeds && errorMessage">
+    {{errorMessage}}
+  </div>
+  <!-- error msg -->
+
+ 
+</div>
+
+
+<!-- home page content will load here -------------- -->
+

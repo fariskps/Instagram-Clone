@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined");
+$color_1: #000;
+$color_2: rgba(0, 0, 0, 0.5);
+*{
+    font-size: 15px;
+    color: $color_1;
+}
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.mat-button-toggle-checked {
+    background-color:#fff;
+}
+.user-thumb-small {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+mat-icon {
+    font-size: 27px;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color_2;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $color_2;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $color_2;
+}

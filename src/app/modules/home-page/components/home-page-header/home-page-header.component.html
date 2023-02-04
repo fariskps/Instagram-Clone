@@ -1,0 +1,8 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <img *ngIf="siteConfig && siteConfig.logo" src="{{siteConfig.logo}}" alt="{{siteConfig.name?siteConfig.name:''}}" />
+    <span matBadgeOverlap="true" matBadge="10" matBadgeColor="warn">
+      <mat-icon class="material-icons-outlined">send</mat-icon>
+    </span>
+  </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,40 @@
+<section class="main">
+    <div class="wrapper">
+        <div class="left-col">
+            <div class="post">
+                <div class="info">
+                    <div class="user">
+                        <div class="profile-pic"><img src="assets/users/02.jpg" alt=""></div>
+                        <p class="username" *ngIf="feedItem.author"> {{ (feedItem.author.length>24)? (feedItem.author |
+                            slice:0:24)+'...':(feedItem.author)}}</p>
+                    </div>
+                    <mat-icon class="material-icons-outlined options">more_vert</mat-icon>
+                </div>
+                
+                <insta-feed-image [feedItem]="feedItem"></insta-feed-image>
+              
+                <div class="post-content">
+                   <insta-reaction-wraper></insta-reaction-wraper>
+                    <p class="likes">1,012 likes</p>
+                    <p class="description" *ngIf="feedItem.description && !showAll">
+                        <span>{{feedItem.author?feedItem.author:''}} </span>
+                        {{ (feedItem.description.length>50)? (feedItem.description |
+                        slice:0:50)+'...':(feedItem.description)}}
+                        <span (click)="showMore()" class="shoMore">more</span>
+                    </p>
+                    <p class="description" *ngIf="feedItem.description && showAll">
+                        <span>{{feedItem.author?feedItem.author:''}} </span>
+                        {{feedItem.description}}
+                    </p>
+
+                    <p class="post-small-item">View all 152 comments</p>
+                    <div class="comment-wrapper">
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-btn">post</button>
+                    </div>
+                    <p class="post-small-item">2 minutes ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
